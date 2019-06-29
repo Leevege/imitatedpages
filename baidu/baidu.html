@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+        .top-right{
+            float: right;
+        }
+        .top-right > *,
+        .second-line > *{
+            display: inline-block;
+        }
+        .footer{
+            text-align: center;
+        }
+        .down-center{
+            text-align: center;
+        }
+        .up-center .logo, .search-bar{
+            display: block;
+            width: 300px;
+            height: 100px;
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-right">
+        <a href="#">新闻</a>
+        <a href="#">hao123</a>
+        <a href="#">地图</a>
+        <a href="#">视频</a>
+        <a href="#">贴吧</a>
+        <a href="#">学术</a>
+        <a href="#">登录</a>
+        <a href="#">设置</a>
+        <a href="#">更多产品</a>
+    </div>
+    <div class="up-center">
+        <img class="logo" src="./bdLOGO.png" alt="百度LOGO">
+        <div class="search-bar">
+            <input type="text"><input type="button" value="百度一下">
+        </div>
+    </div>
+    <div class="down-center">
+        <img src="./bdqrcode.png" alt="二维码">
+        <div>下载百度APP</div>
+        <div>有事搜一搜  没事看一看</div>
+    </div>
+    <div class="footer">
+        <div class="first-line">
+            <a href="#">把百度设为主页</a>    
+            <a href="#">关于百度</a>    
+            <a href="#">About Baidu</a>    
+            <a href="#">百度推广</a>
+        </div>
+        <div class="second-line">
+            <div>&copy;2019 Baidu</div>
+            <a href="#">使用百度前必读</a>
+            <a href="#">意见反馈</a>
+            <div>京ICP证030173号</div>
+            <a href="#">京公网安备11000002000001号</a>
+        </div>
+    </div>
+</body>
+</html>
