@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        html{
+        *{
             box-sizing: border-box;
         }
         .top-right{
             float: right;
         }
-        .top-right > *,
         .second-line > *{
             display: inline-block;
         }
@@ -22,12 +21,40 @@
         .down-center{
             text-align: center;
         }
-        .up-center .logo, .search-bar{
+        img{
+            width: 15%;
+            height: 15%;
+        }
+        .up-center .logo, .search-bar, .down-center, .footer{
+            clear: both;
+            text-align: center;
             display: block;
-            width: 300px;
-            height: 100px;
-            padding-top: 50px;
+            padding-top: 35px;
             margin: 0 auto;
+        }
+        .search-bar input:first-child{
+            padding: 2px 4px;
+            border: 1px solid rgb(40, 40, 255);
+            height: 30px;
+            width: 500px;
+        }
+        .search-bar input:last-child{
+            display: inline-block;
+            border: 1px solid rgb(40, 40, 255);
+            height: 30px;
+            font-size: 15px;
+            width: 120px;
+            color: white;
+            background-color: rgb(40, 40, 255);
+        }
+        .search-bar input:last-child:hover{
+            background-color: blue;
+        }
+        .down-center div:last-child, .footer > *, a{
+            color: gray;
+        }
+        .down-center div:last-child, .second-line{
+            padding-top: 5px;
         }
     </style>
 </head>
