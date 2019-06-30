@@ -9,35 +9,31 @@
         *{
             box-sizing: border-box;
         }
+        /* 右上方样式 */
         .top-right{
             float: right;
         }
         .second-line > *{
             display: inline-block;
         }
-        .footer{
-            text-align: center;
-        }
-        .down-center{
-            text-align: center;
-        }
-        img{
-            width: 15%;
-            height: 15%;
+        .up-center .logo{
+            width: 200px;
         }
         .up-center .logo, .search-bar, .down-center, .footer{
-            clear: both;
             text-align: center;
+            clear: both;
             display: block;
-            padding-top: 35px;
+            padding-top: 40px;
             margin: 0 auto;
         }
+        /* 搜索框样式 */
         .search-bar input:first-child{
             padding: 2px 4px;
             border: 1px solid rgb(40, 40, 255);
             height: 30px;
             width: 500px;
         }
+        /* 按钮样式 */
         .search-bar input:last-child{
             display: inline-block;
             border: 1px solid rgb(40, 40, 255);
@@ -55,6 +51,9 @@
         }
         .down-center div:last-child, .second-line{
             padding-top: 5px;
+        }
+        .down-center img{
+            padding-top: 50px;
         }
     </style>
 </head>
