@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
             color: rgb(100, 100, 100);
         }
-        a{
+
+        a {
             text-decoration: none;
         }
-        a:hover{
+
+        a:hover {
             color: black;
             text-decoration: underline;
         }
-        .menu-bar, .down-right{
-            position:absolute;
+
+        .menu-bar,
+        .down-right {
+            position: absolute;
             right: 10px;
         }
-        .down-left{
+
+        .down-left {
             float: left;
         }
-        .menu-bar a, .down-left a, .down-right a{
+
+        .menu-bar a,
+        .down-left a,
+        .down-right a {
             padding: 0 10px;
         }
-        .footer{
+
+        .footer {
             position: fixed;
             bottom: 0;
             border-top: 1px solid rgb(210, 210, 210);
@@ -36,11 +46,13 @@
             height: 40px;
             background-color: rgb(240, 240, 240);
         }
-        .main{
+
+        .main {
             padding-top: 150px;
             text-align: center;
         }
-        .search-bar input{
+
+        .search-bar input {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
@@ -54,48 +66,92 @@
             border: 1px solid rgba(150, 150, 150, 0.1);
             box-shadow: rgba(150, 150, 150, 0.3) 0 0 3px 3px;
         }
-        .buttons > *{
+
+        .buttons>* {
             margin: 0 5px;
             background-color: rgb(240, 240, 240);
             border: 0;
-            width: 120px;
+            min-width: 120px;
             height: 35px;
         }
-        .buttons input:hover{
+
+        .buttons input:hover {
             color: black;
             border: 1px solid rgb(190, 190, 190);
         }
     </style>
 </head>
+
 <body>
-   <div class="menu-bar">
-       <a href="#">Gmail</a>
-       <a href="#">Image</a>
-       <a href="#">menu</a>
-       <a href="#">Sign in</a>
-   </div>
-   <div class="main">
-    <img src="./googlelogo.png" alt="googlelogo">
-       <div class="search-bar">
-           <input type="text" placeholder="Search">
+    <div class="menu-bar">
+        <a href="#">Gmail</a>
+        <a href="#">Image</a>
+        <a href="#">menu</a>
+        <a href="#">Sign in</a>
+    </div>
+    <div class="main">
+        <img src="./googlelogo.png" alt="googlelogo">
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
         </div>
         <div class="buttons">
             <input type="button" value="Google Search">
-            <input type="button" value="Feeling Lucky">
+            <input type="button" value="I'm Feeling Lucky" id="LuckyBtn" onmouseover="Change()">
         </div>
-   </div>
-   <div class="footer">
-       <div class="down-left">
-           <a href="#">Advertising</a>
-           <a href="#">Business</a>
-           <a href="#">About</a>
-           <a href="#">How Search works</a>
-       </div>
-       <div class="down-right">
-           <a href="#">Privacy</a>
-           <a href="#">Terms</a>
-           <a href="#">Settings</a>
-       </div>
-   </div>
+    </div>
+    <div class="footer">
+        <div class="down-left">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+            <a href="#">How Search works</a>
+        </div>
+        <div class="down-right">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+        </div>
+    </div>
+    <script>
+        var BtnContent = [
+            'good',
+            'clever',
+            'beautiful',
+            'lovely',
+            'delicious',
+            'nice',
+            'honest',
+            'trustful',
+            'brave',
+            'generous',
+            'enthusiastic',
+            'radient',
+            'rapture',
+            'reasonable',
+            'responsible',
+            'romantic',
+            'hearty',
+            'helpful',
+            'honesty',
+            'honey',
+            'humor',
+            'bright',
+            'useful',
+            'Brilliant',
+            'United',
+            'beautiful',
+            'smart',
+            'obedient',
+            'objective',
+            'obliging',
+            'diligent',
+        ];
+        var Btn = document.getElementById('LuckyBtn');
+        Btn.onmouseover = function () {
+            var rand = Math.floor(Math.random() * BtnContent.length);
+            Btn.value = 'I\'m Feeling ' + BtnContent[rand];
+        };
+    </script>
 </body>
+
 </html>
