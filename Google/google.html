@@ -18,16 +18,14 @@
             text-decoration: underline;
         }
         .menu-bar, .down-right{
-            float: right;
+            position:absolute;
+            right: 10px;
         }
         .down-left{
             float: left;
         }
         .menu-bar a, .down-left a, .down-right a{
             padding: 0 10px;
-        }
-        .main{
-            clear: both;
         }
         .footer{
             position: fixed;
@@ -43,13 +41,18 @@
             text-align: center;
         }
         .search-bar input{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
             height: 50px;
             width: 600px;
             border-radius: 25px;
             margin: 30px;
             padding: 10px 20px;
             background-color: white;
-            outline: none;
+            outline: honeydew;
+            border: 1px solid rgba(150, 150, 150, 0.1);
+            box-shadow: rgba(150, 150, 150, 0.3) 0 0 3px 3px;
         }
         .buttons > *{
             margin: 0 5px;
@@ -74,7 +77,7 @@
    <div class="main">
     <img src="./googlelogo.png" alt="googlelogo">
        <div class="search-bar">
-           <input type="text">
+           <input type="text" placeholder="Search">
         </div>
         <div class="buttons">
             <input type="button" value="Google Search">
